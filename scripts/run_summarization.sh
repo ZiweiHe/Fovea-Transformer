@@ -18,6 +18,7 @@ deepspeed --include="localhost:0,1,2,3" --master_port 26000 scripts/run.py \
     --data_seed $SEED \
     --do_train \
     --do_eval \
+    --do_predict \
     --dataset_name $2 \
     --dataset_config_name $3 \
     --output_dir $OUTPUT_DIR \
